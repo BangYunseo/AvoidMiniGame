@@ -10,7 +10,8 @@ public class GameController : MonoBehaviour
     {
         GameObject Food;
         Food = Instantiate(FoodPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        print("Instantiate Food complete!")
+        
+        print("Instantiate Food complete!");
     }
 
     // Update is called once per frame

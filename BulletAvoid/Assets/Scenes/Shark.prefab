@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 744946940167288916}
   - component: {fileID: 6627386861663119234}
-  - component: {fileID: -8620014889687769224}
+  - component: {fileID: 6440912926715122118}
   m_Layer: 0
-  m_Name: Food
+  m_Name: Shark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 684200611, guid: ce400dcd177e58f40929a0fc57c443e9, type: 3}
+  m_Sprite: {fileID: -513446783, guid: a4393b9e66e688744a49a75b26f4b196, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-8620014889687769224
+--- !u!114 &6440912926715122118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,6 +94,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3402545295032144839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36e7fc7a7f23fd1439df39de4f09866e, type: 3}
+  m_Script: {fileID: 11500000, guid: 760467ebf8b5edc4187851ff8951e500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

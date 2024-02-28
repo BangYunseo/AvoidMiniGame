@@ -15,6 +15,8 @@ public class Food : MonoBehaviour
         myPos = transform.position;
 
         newPos = (targetPos - myPos) * 0.01f;
+        
+        Destroy(gameObject, 5f);
     }
 
     // Update is called once per frame

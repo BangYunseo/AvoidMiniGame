@@ -5,9 +5,14 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public GameObject FoodPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
+        InvokeRepeating("MakeFood", 0f, 1f);
+    }
+
+    void MakeFood() {
         GameObject Food;
 
         float switchV = Random.value;
@@ -32,7 +37,6 @@ public class GameController : MonoBehaviour
                 Food = Instantiate(FoodPrefab, new Vector3(xV, 22f, 0f), Quaternion.identity);
             }
         }
-        // Food = Instantiate(FoodPrefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
     // Update is called once per frame

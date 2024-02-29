@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
         float xV = Random.Range(-13f, 13f);
         float yV = Random.Range(-22f, 22f);
 
-        Debug.Log("switchValue : " + switchV + ", xValue : " + xV + ", yValue : " + yV);
+        
 
         if(switchV > 0.5f) {
             if(Random.value > 0.5f){

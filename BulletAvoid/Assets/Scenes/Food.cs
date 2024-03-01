@@ -8,15 +8,18 @@ public class Food : MonoBehaviour
     Vector3 myPos;
 
     Vector3 newPos;
+
+
     void Start()
     {
         targetPos = GameObject.Find("Player").transform.position;
 
         myPos = transform.position;
 
-        newPos = (targetPos - myPos) * 0.01f;
+        newPos = (targetPos - myPos) * 0.0001f;
         
         Destroy(gameObject, 5f);
+
     }
 
     // Update is called once per frame
@@ -24,4 +27,9 @@ public class Food : MonoBehaviour
     {
         transform.position = transform.position + newPos;
     }
+
+    // void OnTriggerEnter2D(Collider2D collider){
+    //     Destroy(collider.gameObject);
+    //     Debug.Log("GAME OVER");
+    // }
 }

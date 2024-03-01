@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     public GameObject FoodPrefab;
-
+    public GameObject uiStartGameObject;
     // Start is called before the first frame update
+    
+    public void PressStart(){
+        uiStartGameObject.SetActive(false);
+    }
     void Start()
     {
-        InvokeRepeating("MakeFood", 0f, 1f);
+        
     }
 
     void MakeFood() {
@@ -18,8 +23,6 @@ public class GameController : MonoBehaviour
         float switchV = Random.value;
         float xV = Random.Range(-13f, 13f);
         float yV = Random.Range(-22f, 22f);
-
-        
 
         if(switchV > 0.5f) {
             if(Random.value > 0.5f){

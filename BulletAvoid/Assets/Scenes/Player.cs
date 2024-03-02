@@ -15,16 +15,16 @@ public class Player : MonoBehaviour
     void Update()
     {
         if(dir == "up"){
-            transform.Translate(Vector3.up * 0.1f);
+            transform.Translate(Vector3.up * 1f);
         }
         else if(dir == "left"){
-            transform.Translate(Vector3.left * 0.1f);
+            transform.Translate(Vector3.left * 1f);
         }
         else if(dir == "right"){
-            transform.Translate(Vector3.right * 0.1f);
+            transform.Translate(Vector3.right * 1f);
         }
         else if(dir == "down"){
-            transform.Translate(Vector3.down * 0.1f);
+            transform.Translate(Vector3.down * 1f);
         }
     }
     public void Press_normal(){
@@ -42,7 +42,9 @@ public class Player : MonoBehaviour
     public void Press_right(){
         dir = "right";
     }
+
     void OnTriggerEnter2D(Collider2D collider){
-        Debug.Log(collider);
+        Debug.Log(collider.gameObject);
+        GameObject.Find("game").GetComponent<GameController>().uiEndGameObject.SetActive(true);
     }
 }

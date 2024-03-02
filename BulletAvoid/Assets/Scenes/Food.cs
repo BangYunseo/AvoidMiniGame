@@ -16,9 +16,9 @@ public class Food : MonoBehaviour
 
         myPos = transform.position;
 
-        newPos = (targetPos - myPos) * 0.0001f;
+        newPos = (targetPos - myPos) * 0.01f;
         
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 15f);
 
     }
 

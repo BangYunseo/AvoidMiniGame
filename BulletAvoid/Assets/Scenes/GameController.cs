@@ -7,16 +7,44 @@ public class GameController : MonoBehaviour
 {
     public GameObject FoodPrefab;
     public GameObject uiStartGameObject;
+    public GameObject uiEndGameObject;
+    public Text uiTime;
+    
+    int sec;
     // Start is called before the first frame update
     
-    public void PressStart(){
-        uiStartGameObject.SetActive(false);
-    }
     void Start()
     {
         
     }
 
+    public void PressStart(){
+        sec = 0;
+
+        uiStartGameObject.SetActive(false);
+
+        InvokeRepeating("MakeFood", 0f, 1f);
+        InvokeRepeating("SetTime", 1f, 1f);
+    }
+
+    public void PressRestart(){
+        sec = 0;
+        uiTime.text = "" + sec;
+
+        GameObject[] Foods = GameObject.FindGameObjectsWithTag("Food");
+
+        foreach (GameObject food in Foods){
+            Destroy(food);
+        }
+        
+        uiEndGameObject.SetActive(false);
+
+    }
+
+    void SetTime(){
+        sec = sec + 1;
+        uiTime.text = sec.ToString();
+    }
     void MakeFood() {
         GameObject Food;
 

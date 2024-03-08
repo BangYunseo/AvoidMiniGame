@@ -15,16 +15,16 @@ public class Player : MonoBehaviour
     void Update()
     {
         if(dir == "up"){
-            transform.Translate(Vector3.up * 1f);
+            transform.Translate(Vector3.up * 0.1f);
         }
         else if(dir == "left"){
-            transform.Translate(Vector3.left * 1f);
+            transform.Translate(Vector3.left * 0.1f);
         }
         else if(dir == "right"){
-            transform.Translate(Vector3.right * 1f);
+            transform.Translate(Vector3.right * 0.1f);
         }
         else if(dir == "down"){
-            transform.Translate(Vector3.down * 1f);
+            transform.Translate(Vector3.down * 0.1f);
         }
     }
     public void Press_normal(){

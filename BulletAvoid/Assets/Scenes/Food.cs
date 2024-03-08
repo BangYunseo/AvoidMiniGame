@@ -4,32 +4,15 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    Vector3 targetPos;
-    Vector3 myPos;
-
-    Vector3 newPos;
-
-
+    // Start is called before the first frame update
     void Start()
     {
-        targetPos = GameObject.Find("Player").transform.position;
-
-        myPos = transform.position;
-
-        newPos = (targetPos - myPos) * 0.01f;
         
-        Destroy(gameObject, 15f);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + newPos;
+        
     }
-
-    // void OnTriggerEnter2D(Collider2D collider){
-    //     Destroy(collider.gameObject);
-    //     Debug.Log("GAME OVER");
-    // }
 }

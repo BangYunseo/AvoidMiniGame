@@ -3,7 +3,7 @@ Bullet Avoid Mini Game(가제 : Fish.io)
 * 총알 피하기 미니 게임 프로젝트
 
 #### 추가할 사항
-##### 오브젝트의 저작권 관련해서 새로운 디자인이 필요한지에 대해 많은 고민이 있었으나 최대한 구글의 PNG들을 사용하는 것으로 결정
+
 * 오브젝트 추가 및 수정
   * 쉴드 오브젝트
     * 데미지 1회 방어
@@ -16,7 +16,6 @@ Bullet Avoid Mini Game(가제 : Fish.io)
 * RECORD 기능 추가
 * QUIT 기능 추가
 * 게임 멈추는 기능 추가
-* (중요하지만 가장 힘들 것 같은 부분) 게임을 하는 경쟁대상의 AI가 필요함
 
 
 [참고 강의](https://boxwitch.tistory.com/entry/%EC%9C%A0%EB%8B%88%ED%8B%B0-%EA%B2%8C%EC%9E%84%EB%A7%8C%EB%93%A4%EA%B8%B0-%EC%B4%9D%EC%95%8C%ED%94%BC%ED%95%98%EA%B8%B01)

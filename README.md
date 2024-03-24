@@ -1,5 +1,5 @@
 # Avoid-Mini-Game
-Bullet Avoid Mini Game(가제 : Fish.io)
+Bullet Avoid Mini Game(가제 : 바다여행)
 * 총알 피하기 미니 게임 프로젝트
 
 #### 추가할 사항

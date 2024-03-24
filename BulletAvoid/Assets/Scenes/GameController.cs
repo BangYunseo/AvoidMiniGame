@@ -69,8 +69,8 @@ public class GameController : MonoBehaviour
                 Shark = Instantiate(SharkPrefab, new Vector3(xV, 22f, 0f), Quaternion.identity);
             }
         }
-    }
 
+    }
     // Update is called once per frame
     void Update()
     {

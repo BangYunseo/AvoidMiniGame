@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce400dcd177e58f40929a0fc57c443e9
+guid: 263ff53e63b9b544c892c330118b6691
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,43 +117,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Food_0
+      name: Start_0
       rect:
         serializedVersion: 2
-        x: 93
-        y: 184
-        width: 331
-        height: 158
-      alignment: 9
-      pivot: {x: 0.5090151, y: 0.50638556}
-      border: {x: 1, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5318f7481c934d94f87a941a09bff58d
-      internalID: 684200611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Food_1
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 185
-        width: 330
-        height: 157
+        x: 9
+        y: 6
+        width: 735
+        height: 312
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 4, z: 0, w: 4}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43c5b3def88d81e48877299cb176c1b4
-      internalID: 279563872
+      spriteID: f8c8b4079c51a2d47bc07638d98071c0
+      internalID: 2042176940
       vertices: []
       indices: 
       edges: []
@@ -169,8 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Food_0: 684200611
-      Food_1: 279563872
+      Start_0: 2042176940
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

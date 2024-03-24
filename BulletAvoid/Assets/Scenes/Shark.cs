@@ -16,10 +16,15 @@ public class Shark : MonoBehaviour
 
         myPos = transform.position;
 
-        newPos = (targetPos - myPos) * 0.001f;
+        newPos = (targetPos - myPos).normalized * 0.05f;
         
-        Destroy(gameObject, 15f);
+        Destroy(gameObject, 20f);
 
+    }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 
     // Update is called once per frame

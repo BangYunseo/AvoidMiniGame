@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     float speed = 0.1f;
     float padding = 0.5f;
     
+    void Awake(){
+        Debug.Log("모험을 시작합니다.");
+    }
     // Start is called before the first frame update
     void Start()
     {

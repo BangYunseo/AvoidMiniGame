@@ -1212,6 +1212,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1285,6 +1286,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b54dfc32ca1fa438f4a8d62fbc7463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705805151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,8 +1484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SharkPrefab: {fileID: 0}
-  uiStartGameObject: {fileID: 718011151}
-  uiEndGameObject: {fileID: 0}
+  uiStartGameObject: {fileID: 0}
+  uiEndGameObject: {fileID: 718011151}
   uiScore: {fileID: 0}
 --- !u!114 &718011154
 MonoBehaviour:
@@ -1518,9 +1531,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1030154812}
-        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
-        m_MethodName: PressStart
+      - m_Target: {fileID: 519420033}
+        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+        m_MethodName: GameQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1550,7 +1563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2042176940, guid: 263ff53e63b9b544c892c330118b6691, type: 3}
+  m_Sprite: {fileID: -67301582, guid: adb00581fc5642d42b5c0081324a68b6, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

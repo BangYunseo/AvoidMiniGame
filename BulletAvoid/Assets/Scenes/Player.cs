@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     float padding = 0.5f;
     
     void Awake(){
-        Debug.Log("모험을 시작합니다.");
+        Debug.Log("게임을 시작합니다.");
     }
     // Start is called before the first frame update
     void Start()

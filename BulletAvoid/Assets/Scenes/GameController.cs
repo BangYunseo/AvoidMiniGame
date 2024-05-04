@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
 
     public void PressStart(){
         score = 0;
-        uiScore.text = "SCORE : " + score;
+        uiScore.text = score.ToString();
 
         uiStartGameObject.SetActive(false);
 
@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
 
     public void PressRestart(){
         score = 0;
-        uiScore.text = "SCORE : " + score;
+        uiScore.text = score.ToString();
 
         GameObject[] Sharks = GameObject.FindGameObjectsWithTag("Shark");
 
@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
 
     void SetScore(){
         score++;
-        uiScore.text = "SCORE : " + score.ToString();
+        uiScore.text = score.ToString();
     }
     void MakeShark() {
         GameObject Shark;

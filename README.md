@@ -1,6 +1,5 @@
 # Avoid-Mini-Game
-Bullet Avoid Mini Game
-* 총알 피하기 미니 게임 프로젝트
+* 미니 게임 프로젝트
 
 #### 추가할 사항
 * 오브젝트 추가 및 수정
